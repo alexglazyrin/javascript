@@ -11,6 +11,7 @@
 
 let test = true;
 // (test === true) ? console.log('+++') : console.log('---');
+
 console.log((test === true) ? '+++' : '---'); 
 
 
