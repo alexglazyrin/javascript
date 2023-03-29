@@ -9,8 +9,10 @@
 
 //ex2
 
-// let test = true;
+let test = true;
 // (test === true) ? console.log('+++') : console.log('---');
+console.log((test === true) ? '+++' : '---'); 
+
 
 //ex3
 
@@ -26,15 +28,15 @@
 
 //ex4
 
-let number = prompt('Введите число');
+// let number = prompt('Введите число');
 
-dig4 = parseInt(number/1000);
-remains = number%1000;
-dig3 = parseInt(remains/100);
-remains = remains%100
-dig2 = parseInt(remains/10);
-remains = remains%10;
+// dig4 = parseInt(number/1000);
+// remains = number%1000;
+// dig3 = parseInt(remains/100);
+// remains = remains%100
+// dig2 = parseInt(remains/10);
+// remains = remains%10;
 
-alert(`Введенное число состоит из: ${dig4} тысяч ${dig3} сотен ${dig2} десятков ${remains} единиц`);
+// alert(`Введенное число состоит из: ${dig4} тысяч ${dig3} сотен ${dig2} десятков ${remains} единиц`);
 
 //ex5
