@@ -9,10 +9,10 @@
 
 //ex2
 
-let test = true;
+// let test = true;
 // (test === true) ? console.log('+++') : console.log('---');
 
-console.log((test === true) ? '+++' : '---'); 
+// console.log((test === true) ? '+++' : '---'); 
 
 
 //ex3

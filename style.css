@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top-head {
+  background-color: azure;
+}
+.top-head__title {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: rgb(13, 46, 233);
+  background-color: aliceblue;
+}
+
+.content {
+  display: flex;
+  background-color: rgb(132, 134, 134);
+}
+
+.text {
+  color: rgb(226, 230, 16);
+  padding: 24px;
+}/*# sourceMappingURL=style.css.map */
