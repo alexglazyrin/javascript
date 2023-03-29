@@ -36,3 +36,5 @@ dig2 = parseInt(remains/10);
 remains = remains%10;
 
 alert(`Введенное число состоит из: ${dig4} тысяч ${dig3} сотен ${dig2} десятков ${remains} единиц`);
+
+//ex5
