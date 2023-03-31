@@ -71,16 +71,127 @@
 //     console.log('Не угадал');
 // }
 
-function askQuestion(answer, question) {
-    const userAnswer = prompt(question);
+// function askQuestion(answer, question) {
+//     const userAnswer = prompt(question);
 
-    if (userAnswer.toLowerCase() === answer) {
-        console.log('Угадал');
-    } else {
-        console.log('Не угадал');
-    }
-}
+//     if (userAnswer.toLowerCase() === answer) {
+//         console.log('Угадал');
+//     } else {
+//         console.log('Не угадал');
+//     }
+// }
 
-function puzzle() {
-    askQuestion('елка', 'Зимой и летом одним цветом');
-}
+// function puzzle() {
+//     askQuestion('елка', 'Зимой и летом одним цветом');
+// }
+
+//Workshop3
+
+// function userInfo(name, surname, age) {
+//     name = getUserName();
+//     surname = getUserSurname();
+//     age = getUserAge();
+//     console.log(`Привет, ${surname} ${name} с возрастом ${age} лет!`);
+// }
+
+// function getUserName() {
+//     const name = prompt('Введите имя');
+//     return name;
+// }
+// function getUserSurname() {
+//     const surname = prompt('Введите фамилию');
+//     return surname;
+// }
+// function getUserAge() {
+//     const age = prompt('Введите возраст');
+//     return age;
+// }
+
+// // function squadNumber(number) {
+// //     console.log(number**2);    
+// // }
+
+// const squadNumber = number => console.log(number ** 2);
+
+// function getNumberForSquad() {
+//     squadNumber(prompt('Введите число для возведения его в квадрат'));
+// }
+
+// function getSomeNumber(number) {
+//     console.log((number >= 0) ? '+++' : '---');
+// }
+
+// function pOrNumber() {
+//     getSomeNumber(prompt('Введите любое число'));
+// }
+
+// //ex2
+// //ex2.1
+
+// const sumThree = (num1, num2, num3) => console.log(num1 + num2 + num3);
+
+// function askSumThree() {
+//     sumThree(2, 3, 4);
+// }
+
+// //ex2.2
+
+// function ex2f2() {
+//     let param1 = '1';
+//     let param2 = 2;
+//     let param3 = '3';
+//     param1 = convertToNumber(param1);
+//     param2 = convertToNumber(param2);
+//     param3 = convertToNumber(param3);
+//     sumParam(param1, param2, param3);
+// }
+
+// const convertToNumber = (number) => parseInt(number);
+
+// const sumParam = (param1, param2, param3) => console.log(param1 + param2 + param3);
+
+// //ex3
+// //ex3.1
+
+// const sqrtFunc = (number) => Math.sqrt(number);
+// const num1 = sqrtFunc(3);
+// const num2 = sqrtFunc(4);
+// const sumFunc = (num1, num2) => console.log(num1 + num2);
+
+// //ex3.2
+
+// let num11 = 3;
+// let num22 = 4;
+// const minNumber = (num11, num22) => Math.min(num11, num22);
+// console.log(minNumber(num11, num22));
+
+// const type = param => {
+//     switch (typeof param) {
+//         case 'string':
+//             console.log('String');
+//             break;
+//         case 'number':
+//             console.log('Number');
+//             break;
+//         default:
+//             console.log('H Z');
+//             break;
+//     }
+// }
+
+// const dayOfWeek = (number) => {
+//     switch (number) {
+//         case 1:
+//             console.log('Monday');
+//             break;
+//         case 2:
+//             console.log('Thuesday');
+//             break;
+//         case 3:
+//             console.log('Wednesday');
+//             break;
+//         default:
+//             console.log('Wrong answear');
+//             break;
+//     }
+// }
