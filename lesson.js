@@ -195,3 +195,41 @@
 //             break;
 //     }
 // }
+
+// for (let i = 0; i < 3; i++) {
+//     console.log('Hello for');
+// }
+
+// for (let j = 0; j <= 2; j++) {
+//     console.log(j);
+// }
+// const arr = [1, 2, 'hello', 4, 5, 9];
+// console.log(arr);
+// console.log(arr[0]);
+// console.log(arr.length);
+// console.log(arr.length);
+
+// const user = [];
+
+// user.push(prompt('Enter your name'));
+// user.push(Number(prompt('Enter your age')));
+
+// console.log(user);
+
+// const numbers = [2, 3, 19, 15];
+
+// // console.log(numbers);
+// alert(`Запомни цифры ${numbers}`);
+// // console.log(numbers[numbers.length - 1]); 
+// console.log(numbers.pop()); 
+// console.log(numbers);
+
+// const word = 'example';
+// const arrWord = word.split('');
+// // console.log(word.split(''));
+// // console.log(arrWord.pop());
+// const upWord = arrWord.pop();
+// // console.log(upWord.toLocaleUpperCase());
+// arrWord.push(upWord.toLocaleUpperCase());
+// console.log(arrWord.join(''));
+
