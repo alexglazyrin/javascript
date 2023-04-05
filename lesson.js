@@ -14,7 +14,7 @@
 // let age = Number(prompt('How old are you?'));
 
 // function upAge() {
-//     return age + 5;        
+//     return age + 5;
 // }
 
 // upAge();
@@ -51,7 +51,7 @@
 // console.log(`Для расходом можно использовать ${salary(userMoney)} рублей`);
 
 // function sayHello(params) {
-//     alert('Hello');    
+//     alert('Hello');
 // }
 
 // sayHello();
@@ -108,7 +108,7 @@
 // }
 
 // // function squadNumber(number) {
-// //     console.log(number**2);    
+// //     console.log(number**2);
 // // }
 
 // const squadNumber = number => console.log(number ** 2);
@@ -220,8 +220,8 @@
 
 // // console.log(numbers);
 // alert(`Запомни цифры ${numbers}`);
-// // console.log(numbers[numbers.length - 1]); 
-// console.log(numbers.pop()); 
+// // console.log(numbers[numbers.length - 1]);
+// console.log(numbers.pop());
 // console.log(numbers);
 
 // const word = 'example';
@@ -238,7 +238,7 @@
 
 // const arr = [1,2,3];
 // for (let i = 0; i < arr.length; i++) {
-// console.log(a[i]);    
+// console.log(a[i]);
 // }
 
 //1.2
@@ -260,7 +260,7 @@
 // const arr = [1,2,3];
 // console.log(arr);
 // for (let i = 0; i < arr.length; i++) {
-//     arr[i]+=2;    
+//     arr[i]+=2;
 // }
 // console.log(arr);
 
@@ -297,13 +297,13 @@
 // for (let i = 1; i <= 99; i++) {
 //     if(i % 2 != 0){
 //         console.log(i);
-//     }    
+//     }
 // }
 
 //3.3
 
 // for (let i = 0; i > 0; i--) {
-//     console.log(i);    
+//     console.log(i);
 // }
 
 //3.4
@@ -312,16 +312,19 @@
 // let count = 0;
 // while (num <= 1000) {
 //     num = num * 3;
-//     count++;    
+//     count++;
 // }
 // console.log(num, count);
 
 //3.5
 
-for (let i = 0; i < 3; i++) {
-    for (let j = 0; j < 3; j++) {
-        console.log(`${i+1}${j+1}`);
-    }
-    console.log('');
-}
+// for (let i = 0; i < 3; i++) {
+//     for (let j = 0; j < 3; j++) {
+//         console.log(`${i+1}${j+1}`);
+//     }
+//     console.log('');
+// }
+
+
+
 
