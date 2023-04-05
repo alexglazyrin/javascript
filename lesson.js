@@ -233,3 +233,95 @@
 // arrWord.push(upWord.toLocaleUpperCase());
 // console.log(arrWord.join(''));
 
+//L8
+//1.1
+
+// const arr = [1,2,3];
+// for (let i = 0; i < arr.length; i++) {
+// console.log(a[i]);    
+// }
+
+//1.2
+
+// const arr = [1,2,3,4,5,6,7,8,9];
+// console.log(arr.length);
+
+//1.3
+
+// const arr = ['a', 'b', 'c'];
+// console.log(arr);
+// for (let i = 0; i < arr.length; i++) {
+//     arr[i] = i + 1;
+// }
+// console.log(arr);
+
+//2.1
+
+// const arr = [1,2,3];
+// console.log(arr);
+// for (let i = 0; i < arr.length; i++) {
+//     arr[i]+=2;    
+// }
+// console.log(arr);
+
+//2.2
+
+// const arr = [];
+// arr[3] = 'a';
+// arr[8] = 'b';
+
+// console.log(arr);
+// console.log(arr.length);
+
+//2.3
+
+// const arr = [1, 2, 3];
+// arr.push(4, 5);
+// console.log(arr);
+
+//2.4
+
+// const arr = [1, 2, 3, 4, 5];
+// console.log(arr);
+// arr.splice(3, 2);
+// console.log(arr);
+
+//3.1
+
+// for (let i = 11; i <= 33; i++) {
+//     console.log(i);
+// }
+
+//3.2
+
+// for (let i = 1; i <= 99; i++) {
+//     if(i % 2 != 0){
+//         console.log(i);
+//     }    
+// }
+
+//3.3
+
+// for (let i = 0; i > 0; i--) {
+//     console.log(i);    
+// }
+
+//3.4
+
+// let num = 3;
+// let count = 0;
+// while (num <= 1000) {
+//     num = num * 3;
+//     count++;    
+// }
+// console.log(num, count);
+
+//3.5
+
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        console.log(`${i+1}${j+1}`);
+    }
+    console.log('');
+}
+
