@@ -30,37 +30,37 @@
 // Задание 2 - не выполнил
 // Необходимо из объекта, который лежит в константе post вывести значения, к которым приписан комментарий, в консоль. (Вот, прошу прощения, возможно затуп на работе, но я вообще не понял этого задания)
 
-const post = {
-    author: "John", // вывести этот текст
-    postId: 23,
-    comments: [
-        {
-            userId: 10,
-            userName: "Alex",
-            text: "lorem ipsum",
-            rating: {
-                likes: 10,
-                dislikes: 2, // вывести это число
-            },
-        },
-        {
-            userId: 5, // вывести это число
-            userName: "Jane",
-            text: "lorem ipsum 2", // вывести этот текст
-            rating: {
-                likes: 3,
-                dislikes: 1,
-            },
-        },
-    ],
-};
+// const post = {
+//     author: "John", // вывести этот текст
+//     postId: 23,
+//     comments: [
+//         {
+//             userId: 10,
+//             userName: "Alex",
+//             text: "lorem ipsum",
+//             rating: {
+//                 likes: 10,
+//                 dislikes: 2, // вывести это число
+//             },
+//         },
+//         {
+//             userId: 5, // вывести это число
+//             userName: "Jane",
+//             text: "lorem ipsum 2", // вывести этот текст
+//             rating: {
+//                 likes: 3,
+//                 dislikes: 1,
+//             },
+//         },
+//     ],
+// };
 
 
-console.log(post.author, 
-    post.comments.find((comment) => {
-        return comment.userId === 5;
-    })
-    );
+// console.log(post.author, 
+//     post.comments.find((comment) => {
+//         return comment.userId === 5;
+//     })
+//     );
 
 // Задание 3
 // Дан массив products, необходимо цену каждого продукта уменьшить на 15% используя метод forEach.
@@ -91,34 +91,57 @@ console.log(post.author,
 // 2. Необходимо отсортировать массив products используя метод sort по цене, начиная с самой маленькой, заканчивая самой большой ценой, после чего вывести отсортированный массив в консоль.
 
 
-// const products = [
-//     {
-//         id: 3,
-//         price: 127,
-//         photos: [
-//             "1.jpg",
-//             "2.jpg",
-//         ],
-//     },
-//     {
-//         id: 5,
-//         price: 499,
-//         photos: [],
-//     },
-//     {
-//         id: 10,
-//         price: 26,
-//         photos: [
-//             "3.jpg",
-//         ],
-//     },
-//     {
-//         id: 8,
-//         price: 78,
-//     },
-// ];
+const products = [
+    {
+        id: 3,
+        price: 127,
+        photos: [
+            "1.jpg",
+            "2.jpg",
+        ],
+    },
+    {
+        id: 5,
+        price: 499,
+        photos: [],
+    },
+    {
+        id: 10,
+        price: 26,
+        photos: [
+            "3.jpg",
+        ],
+    },
+    {
+        id: 8,
+        price: 78,
+    },
+];
 
-// const productsWithJPG = products.filter((product) => {
-// });
+console.log(products);
+const productsWithJPG = products.filter((product) => {
+    if (product.photos != null && (product.photos).length > 0) {
+        return true;
+    } 
+});
 
-// console.log(productsWithJPG);
+console.log(productsWithJPG);
+
+// Задание 5
+// Дано 2 массива 
+// const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+// const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
+// 
+
+// Вам необходимо объединить 2 этих массива, чтобы значения первого массива были ключами, а значения второго массива — значениями.
+
+const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
+
+const arrResult = {};
+
+for (let i = 0; i < en.length; i++) {
+    arrResult[en[i]] = ru[i];    
+}
+
+console.log(arrResult);
