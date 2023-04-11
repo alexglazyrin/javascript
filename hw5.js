@@ -11,80 +11,90 @@
 // keyin7: 7,
 // }
 
-// const numbers = {
-//     keyin1: 1,
-//     keyin2: 2,
-//     keyin3: 3,
-//     keyin4: 4,
-//     keyin5: 5,
-//     keyin6: 6,
-//     keyin7: 7,
-// }
+const numbers = {
+    keyin1: 1,
+    keyin2: 2,
+    keyin3: 3,
+    keyin4: 4,
+    keyin5: 5,
+    keyin6: 6,
+    keyin7: 7,
+}
 
-// for (const key in numbers) {
-//     if (numbers[key] >= 3) {
-//         console.log(numbers[key]);
-//     }
-// }
+for (const key in numbers) {
+    if (numbers[key] >= 3) {
+        console.log(numbers[key]);
+    }
+}
 
-// Задание 2 - не выполнил
-// Необходимо из объекта, который лежит в константе post вывести значения, к которым приписан комментарий, в консоль. (Вот, прошу прощения, возможно затуп на работе, но я вообще не понял этого задания)
+// Задание 2 
+// Необходимо из объекта, который лежит в константе post вывести значения, к которым приписан комментарий, в консоль. 
 
-// const post = {
-//     author: "John", // вывести этот текст
-//     postId: 23,
-//     comments: [
-//         {
-//             userId: 10,
-//             userName: "Alex",
-//             text: "lorem ipsum",
-//             rating: {
-//                 likes: 10,
-//                 dislikes: 2, // вывести это число
-//             },
-//         },
-//         {
-//             userId: 5, // вывести это число
-//             userName: "Jane",
-//             text: "lorem ipsum 2", // вывести этот текст
-//             rating: {
-//                 likes: 3,
-//                 dislikes: 1,
-//             },
-//         },
-//     ],
-// };
+const post = {
+    author: "John", // вывести этот текст
+    postId: 23,
+    comments: [
+        {
+            userId: 10,
+            userName: "Alex",
+            text: "lorem ipsum",
+            rating: {
+                likes: 10,
+                dislikes: 2, // вывести это число
+            },
+        },
+        {
+            userId: 5, // вывести это число
+            userName: "Jane",
+            text: "lorem ipsum 2", // вывести этот текст
+            rating: {
+                likes: 3,
+                dislikes: 1,
+            },
+        },
+    ],
+};
+
+for (const key in post) {
+    if (post[key] === "John") {
+        console.log(post[key]);
+    }
+}
 
 
-// console.log(post.author, 
-//     post.comments.find((comment) => {
-//         return comment.userId === 5;
-//     })
-//     );
+const userId5 = post.comments.find((comment) => {
+    return comment.userId === 5;
+});
+console.log(userId5.userId);
+
+const loremIpsum2 = post.comments.find((someText) => {
+    return someText.text === "lorem ipsum 2";
+});
+console.log(loremIpsum2.text);
 
 // Задание 3
 // Дан массив products, необходимо цену каждого продукта уменьшить на 15% используя метод forEach.
 
-// const products = [
-//     {
-//         id: 3,
-//         price: 200,
-//     },
-//     {
-//         id: 4,
-//         price: 900,
-//     },
-//     {
-//         id: 1,
-//         price: 1000,
-//     },
-// ];
+const productsQ = [
+    {
+        id: 3,
+        price: 200,
+    },
+    {
+        id: 4,
+        price: 900,
+    },
+    {
+        id: 1,
+        price: 1000,
+    },
+];
 
-// products.forEach(product => {
-//     product.price *= 0.85
-// });
+productsQ.forEach(product => {
+    product.price *= 0.85
+});
 
-// console.log(products);
+console.log(productsQ);
 
 // Задание 4
 // 1. Необходимо вывести в консоль массив продуктов в котором есть хоть одна фотография используя метод filter. Исходные данные - массив products.
@@ -122,16 +132,19 @@ console.log(products);
 const productsWithJPG = products.filter((product) => {
     if (product.photos != null && (product.photos).length > 0) {
         return true;
-    } 
+    }
 });
 
 console.log(productsWithJPG);
 
+products.sort((prev, next) => prev.price - next.price);
+console.log(products);
+
 // Задание 5
-// Дано 2 массива 
+// Дано 2 массива
 // const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 // const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
-// 
+
 
 // Вам необходимо объединить 2 этих массива, чтобы значения первого массива были ключами, а значения второго массива — значениями.
 
@@ -140,8 +153,13 @@ const ru = ["понедельник", "вторник", "среда", "четв�
 
 const arrResult = {};
 
-for (let i = 0; i < en.length; i++) {
-    arrResult[en[i]] = ru[i];    
+if (en.length === ru.length) {
+    for (let i = 0; i < en.length; i++) {
+        arrResult[en[i]] = ru[i];
+    }
+    console.log(arrResult);
+} else {
+    console.log("Массивы разной длины");
 }
 
-console.log(arrResult);
+

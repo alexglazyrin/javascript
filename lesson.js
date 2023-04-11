@@ -522,47 +522,47 @@
 // };
 // console.log(Object.entries(car));
 
-const studentsPracticeTime = [
-    {
-        firstName: "Ivanov",
-        practiceTime: 56
-    },
-    {
-        firstName: "Petrov",
-        practiceTime: 120
-    },
-    {
-        firstName: "Sidorov",
-        practiceTime: 148
-    },
-    {
-        firstName: "Belkin",
-        practiceTime: 20
-    },
-    {
-        firstName: "Avdeev",
-        practiceTime: 160
-    }
-];
+// const studentsPracticeTime = [
+//     {
+//         firstName: "Ivanov",
+//         practiceTime: 56
+//     },
+//     {
+//         firstName: "Petrov",
+//         practiceTime: 120
+//     },
+//     {
+//         firstName: "Sidorov",
+//         practiceTime: 148
+//     },
+//     {
+//         firstName: "Belkin",
+//         practiceTime: 20
+//     },
+//     {
+//         firstName: "Avdeev",
+//         practiceTime: 160
+//     }
+// ];
 
-const dataForTable = studentsPracticeTime.map((student) => {
-    if (student.practiceTime < 120) {
-        return { // Мы возвращаем новый объект, более удобный для вывода.
-            Student: student.firstName,
-            Practice: "Not passed"
-        };
-    } else {
-        return {
-            Student: student.firstName,
-            Practice: "Passed"
-        };
-    }
-});
+// const dataForTable = studentsPracticeTime.map((student) => {
+//     if (student.practiceTime < 120) {
+//         return { // Мы возвращаем новый объект, более удобный для вывода.
+//             Student: student.firstName,
+//             Practice: "Not passed"
+//         };
+//     } else {
+//         return {
+//             Student: student.firstName,
+//             Practice: "Passed"
+//         };
+//     }
+// });
 
-console.table(dataForTable);
+// console.table(dataForTable);
 
-const studentsPassedPractice = studentsPracticeTime.filter((student) => {
-    if (student.practiceTime < 120) return false
-    return true
-});
-console.log(studentsPassedPractice);
+// const studentsPassedPractice = studentsPracticeTime.filter((student) => {
+//     if (student.practiceTime < 120) return false
+//     return true
+// });
+// console.log(studentsPassedPractice);
